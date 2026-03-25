@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import StudentInfo from './pages/StudentInfo';
 import CourseInfo from './pages/CourseInfo';
 import Summary from './pages/Summary';
+import Responsive from './components/Responsive';
 function App() {
   return (
     <div className="app-shell">
@@ -11,6 +12,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<StudentInfo />} /> 
+           {/* <Route path="/res" element={<Responsive />} />  */}
           <Route path="/course" element={<CourseInfo />} />
           <Route path="/summary" element={<Summary />} />
         </Routes>

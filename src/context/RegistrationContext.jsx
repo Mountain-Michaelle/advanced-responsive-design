@@ -15,10 +15,7 @@ export function RegistrationProvider({ children }) {
   const [formData, setFormData] = useState(initialFormData);
 
   const updateForm = (values) => {
-    setFormData((previous) => ({
-      ...previous,
-      ...values
-    }));
+    setFormData((previous) => ({...previous, ...values}));
   };
 
   const resetForm = () => {
@@ -31,6 +28,8 @@ export function RegistrationProvider({ children }) {
     </RegistrationContext.Provider>
   );
 }
+
+
 
 export function useRegistration() {
   const context = useContext(RegistrationContext);

@@ -37,6 +37,13 @@ function Navbar() {
         >
           Course
         </Link>
+        <Link
+          className={location.pathname === "/res" ? "active-link" : ""}
+          to="/res"
+          onClick={closeMenu}
+        >
+          Res
+        </Link>
         
         <Link
           className={location.pathname === "/summary" ? "active-link" : ""}
